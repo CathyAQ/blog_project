@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from dbconfig import DBCONFIG
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -79,10 +78,10 @@ WSGI_APPLICATION = 'blogproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':DBCONFIG.DEVELOP.NAME,
-        'HOST': DBCONFIG.DEVELOP.HOST,
-        'USER': DBCONFIG.DEVELOP.USER,
-        'PASSWORD': DBCONFIG.DEVELOP.PASSWORD,
+        'NAME':'blog_project',
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'waq123..',
         'PORT': '3306',
         'CHARSET': 'utf-8',
     }
