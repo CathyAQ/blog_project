@@ -12,6 +12,7 @@ def index(request):
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    post.increase_views()
     form = CommentForm()
     comment_list = post.comment_set.all()
     post.body = markdown.markdown(post.body,extensions=[
