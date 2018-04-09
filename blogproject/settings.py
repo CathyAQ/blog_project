@@ -81,7 +81,6 @@ DATABASES = {
         'NAME':'blog_project',
         'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': 'waq123..',
         'PORT': '3306',
         'CHARSET': 'utf-8',
     }
