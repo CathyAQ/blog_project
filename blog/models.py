@@ -17,6 +17,7 @@ class Category(models.Model):
 @python_2_unicode_compatible
 class Tag(models.Model):
     name = models.CharField(max_length=100)
+    category = models.ForeignKey(Category)
 
     def __str__(self):
         return self.name

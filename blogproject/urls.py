@@ -18,7 +18,7 @@ from blog.feeds import AllPostsRssFeed
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'',include('blog.urls')),
-    url(r'',include('comments.urls')),
-    url(r'^all/rss$',AllPostsRssFeed(),name='rss')
+    url(r'^api/',include('blog.urls')),
+    url(r'^api/',include('comments.urls')),
+    # url(r'^all/rss$',AllPostsRssFeed(),name='rss')
 ]
